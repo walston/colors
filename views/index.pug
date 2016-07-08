@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title @walston Color tool
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/styles.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react-dom.min.js')
+    script(src='js/app.js')
+  body
+    .jumbotron
+      .container
+        header.row
+          p.inline-block some content
+          p.inline-block.pull-right some other content
+        main.row
+          form
+            .form-group
+              input#hex(type='text')
+            .form-group
+              input#rgb(type='text')
+        footer.row
+          p.text-center.small ©2016 github.com/walston
