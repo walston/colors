@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 app.use(express.static('./public/'));
 
-var port = process.env.PORT || 8080;
+var port = Number(process.env.PORT) || 8080;
 app.listen(port, function(req, res) {
   console.log('Listening on: ' + port + '...');
 });
