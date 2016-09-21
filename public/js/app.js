@@ -1,5 +1,5 @@
 (function iife(doc) {
-  var color = 0x000000;
+  var color = "288BE0";
   doc.addEventListener("DOMContentLoaded", main);
 
   function main(event) {
@@ -7,6 +7,7 @@
     var rgb = doc.getElementById('rgb');
     hex.addEventListener('change', hexNormalize);
     rgb.addEventListener('change', rgbNormalize);
+    set(color);
   }
 
   function hexNormalize(event) {

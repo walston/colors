@@ -4,28 +4,21 @@ html
     meta(name='viewport' content='width=device-width,initial-scale=1.0')
     title @walston Color tool
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
-    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css')
     link(rel='stylesheet' href='css/styles.css')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react-dom.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/react-router/2.5.2/ReactRouter.min.js')
     script(src='js/app.js')
   body
     .jumbotron
-      .container
-        nav.navbar.navbar-default
-          .empty-container.navbar-left
-          ul.nav.navbar-nav.nav-pills
-            li
-              a(href="http://github.com/walston").icon-bar
-                i.fa.fa-github.fa-2x
-        main.row
-          form.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
-            .form-group
-              input#hex(type='text').form-control
-            .form-group
-              input#rgb(type='text').form-control
-        footer.row
-          p.text-center
-            small.text-center ©2016
-            a(href="http://github.com/walston") github.com/walston
+      nav
+        a(href='http://github.com/walston')
+          i.fa.fa-github.fa-2x
+      main
+        form
+          .form-group
+            input#hex(type='text').form-control
+          .form-group
+            input#rgb(type='text').form-control
+      footer
+        p.text-center
+          small.text-center &copy; 2016
+          a(href="http://github.com/walston")  github.com/walston

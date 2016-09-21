@@ -5,3 +5,31 @@ body, html, .jumbotron {
   top: 0;
   width: 100%;
 }
+
+nav {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translateX(-100%);
+  padding: 15px;
+}
+
+main {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+@media (min-width: 992px) {
+  main {
+    width: 793px;
+  }
+}
+
+footer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
